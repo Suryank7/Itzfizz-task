@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useScrollMotion } from '@/hooks/useScrollMotion';
 import { motionConfig } from '@/utils/motionConfig';
+import carImage from '../../public/car.png';
 
 export default function ScrollVisual() {
   const visualRef = useRef(null);
@@ -111,7 +112,7 @@ export default function ScrollVisual() {
       >
         <div className="w-[300px] md:w-[600px] h-[150px] md:h-[300px] relative">
             <img 
-              src="/car.png" 
+              src={carImage.src} 
               alt="McLaren Orange Sports Car object" 
               className="w-full h-full object-contain drop-shadow-2xl"
             />
